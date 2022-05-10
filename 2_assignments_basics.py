@@ -31,4 +31,22 @@ first_letter = first_name[0] + "." # assign the first character of the first val
 full_name_new = f"{first_letter} {last_name} Jr." # compose the full name
 print(full_name_new)
 
+# %% Assignment 3
+flower_list_1 = ['rose', 'tulip', 'lily']
+flower_list_2 = ['dandelion', 'gerbera']
+
+combined_flower_list = flower_list_1 + flower_list_2
+
+
+#%% a. 
+print(combined_flower_list)
+combined_flower_list[1] = 'daisy'
+print(combined_flower_list)
+
+
+# %% b.
+print(combined_flower_list)
+idx_tulip = combined_flower_list.index("tulip")
+combined_flower_list[idx_tulip] = "daisy"
+
 # %%
