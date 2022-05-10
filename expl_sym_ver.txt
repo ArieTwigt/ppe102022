@@ -1,0 +1,25 @@
+Symantic versioning
+
+symver.org
+
+0.1.0
+1.0.0
+
+3.10.1
+
+
+
+Major - 2
+Minor - 7
+Patch - 1
+---
+
+Major - 3
+Minor - 6
+Patch - 4
+
+---
+Major - 3
+Minor - 10
+Patch - 1
+---> Gebruikt feature sinds 3.9
