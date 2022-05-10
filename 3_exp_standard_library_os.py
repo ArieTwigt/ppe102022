@@ -27,4 +27,5 @@ else:
 
 # %%
 os.rmdir("my_folder")
+
 # %%
