@@ -14,7 +14,8 @@ birthday_day = int(input("What is your birthday day?\n")) #int(sys.argv[2])
 
 # check the day value
 if birthday_day not in range(1, 32):
-    raise ValueError("The day wrong")
+    print("The day is wrong")
+    #raise ValueError("The day wrong")
     sys.exit()
 
 # get the current date
