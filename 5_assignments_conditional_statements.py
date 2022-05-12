@@ -1,15 +1,15 @@
 ## Assignments
 
 #%% 1a.
-name = "Arie"
+name = "Jan"
 
 if "A" in name:
     print("Your name starts with an A!")
 else:
     print("Your name does not start with an A :(")
 
-# %% 1b
 
+# %% 1b
 name = "Arie"
 
 if "a" in name.lower():
@@ -19,7 +19,7 @@ else:
 
 
 #%% 2a.
-name = "Arie"
+name = "Peter"
 
 vowels = ['a', 'e', 'o', 'u', 'i']
 
@@ -36,21 +36,25 @@ else:
 import random
 import string
 
-name = "Arie"
+name = "Peter"
 
 vowels = ['a','e', 'o', 'u', 'i']
 letters_list = list(string.ascii_lowercase)
 
-non_vowels = [letter for letter in letters_list if letter not in vowels]
+non_vowels = [letter 
+              for letter in letters_list 
+              if letter not in vowels]
 
 if name[0].lower() in vowels:
+    print(name)
     print("Your name begins with a vowel")
     random_letter = random.choice(non_vowels)
     random_letter_upper = random_letter.upper()
     name = name.replace(name[0], random_letter_upper)
     print(name)
 else:
-    print("Your name begins with a vowel")
+    print(name)
+    print("Your name begins with a non vowel")
     random_letter = random.choice(vowels)
     random_letter_upper = random_letter.upper()
     name = name.replace(name[0], random_letter_upper)
