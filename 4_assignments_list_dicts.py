@@ -31,4 +31,6 @@ family_dict
 # Append the following person to the members of family dict
 person_5 = {'name': 'peter', 'age': 0}
 
-#?
+#%%
+family_dict['members'].append(object)
+# %%
