@@ -14,9 +14,9 @@ import datetime
 current_time = datetime.datetime.now()
 current_time_10secs = current_time + datetime.timedelta(seconds=10)
 
-# %%
-while current_time < current_time_10secs:
+# %% Caution, this is still an infinite loop
+#while current_time < current_time_10secs:
     
-    print("We zijn bezig")
+    #print("We zijn bezig")
 
 # %%
