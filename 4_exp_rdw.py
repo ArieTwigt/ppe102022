@@ -6,7 +6,6 @@ import pandas as pd
 # %%
 response = requests.get("https://opendata.rdw.nl/resource/m9d7-ebf2.json")
 
-
 # %%
 car_list = response.json()
 
