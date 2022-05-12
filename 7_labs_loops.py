@@ -22,4 +22,27 @@ for name in names_list:
 print(new_names_list)
 
 
+# %% 2a.
+import datetime
+
+# (optioneel, als je de taal/locale gegevens wilt wijzigen)
+import locale 
+
+locale.setlocale(locale.LC_ALL, "nl_NL")
+
+current_date = datetime.date.today()
+
+day_range = range(1,11) # starts with 1, ends by 10
+
+for num_days in day_range:
+    new_date = current_date + datetime.timedelta(days = num_days)
+    print(new_date.strftime("%A")) # strftime.org --> voor verschillende data formaten
+
+
+#%% 2b. 
+import locale 
+
+locale.setlocale(locale.LC_ALL, "nl_NL")
+
+
 # %%
