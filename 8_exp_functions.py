@@ -10,7 +10,7 @@ replace_first_letter("Arie")
 import math
 
 
-def calc_pythagoras(A, B, rounding=False, rounding_value=1):
+def calc_pythagoras(A, B=None, rounding=False, rounding_value=1, export_as_dict=False):
     '''
     This function applies the Pythagoras theorem
 
@@ -21,17 +21,25 @@ def calc_pythagoras(A, B, rounding=False, rounding_value=1):
     - rounding_value (optional)
 
     '''
+    
 
-
+    global C_sqrd
     C_sqrd = math.pow(A, 2) + math.pow(B, 2)
+
     C = math.sqrt(C_sqrd)
 
     if rounding:
         C = round(C, rounding_value)
 
-    return C
+    if export_as_dict:
+        return {"A": A,
+                "B": B,
+                "C": C}
+    else:         
+        return C, C_sqrd
+
 
 #%%
-calc_pythagoras(4, 4, rounding=True, rounding_value=5)
+result = calc_pythagoras(4)
 
 # %%
