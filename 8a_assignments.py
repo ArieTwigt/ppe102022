@@ -20,3 +20,25 @@ def calc_content(length, width, height):
 
 
 #%% using the function
+result = calc_content(10, 4, 5)
+print(result)
+
+# Assignment 2
+## Define a function that accepts a lists, capitalizes every name in the list, and retuns this capitalized list. You can use: ['Jim', 'John', 'Marc', 'Danny', 'Peter']
+# %% define the names list
+my_names = ['jim', 'john', 'marc', 'danny', 'peter']
+
+
+#%% define the function
+def capitalize_names(names_list):
+    new_list = []
+
+    for name in names_list:
+        new_list.append(name.capitalize())
+    
+    return new_list
+
+
+#%% apply the function
+capitalize_names(my_names)
+# %%
