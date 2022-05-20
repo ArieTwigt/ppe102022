@@ -4,6 +4,7 @@ import requests
 import pandas as pd
 import os
 import datetime
+import sys
 
 #%% check if the export folders already exists
 current_files_folders = os.listdir()
@@ -13,7 +14,9 @@ if "export" not in current_files_folders:
     os.mkdir("export")
 
 #%%
-with open("car_config.json", "r") as file:
+config_file = sys.argv[1]
+
+with open(config_file, "r") as file:
     config_str = file.read()
 
 #%% convert the string to a dict
